@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Public Repositories</string>
+    <string name="repo_owner_avatar_content_description">Repo Owner Avatar</string>
 </resources>
