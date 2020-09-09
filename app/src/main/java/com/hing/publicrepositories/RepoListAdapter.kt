@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.hing.publicrepositories.data.Repo
+import com.hing.publicrepositories.entities.Repo
 import com.hing.publicrepositories.extensions.loadCircleImageURL
 
 /**

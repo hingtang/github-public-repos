@@ -1,4 +1,4 @@
-package com.hing.publicrepositories.data
+package com.hing.publicrepositories.entities
 
 import com.google.gson.annotations.SerializedName
 

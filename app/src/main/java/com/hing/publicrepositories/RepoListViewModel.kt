@@ -2,7 +2,7 @@ package com.hing.publicrepositories
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.hing.publicrepositories.data.Repo
+import com.hing.publicrepositories.entities.Repo
 import com.hing.publicrepositories.network.RepoService
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
