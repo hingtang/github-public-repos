@@ -1,4 +1,4 @@
-package com.hing.publicrepositories
+package com.hing.publicrepositories.components.repolist
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.hing.publicrepositories.R
 import com.hing.publicrepositories.entities.Repo
 import com.hing.publicrepositories.extensions.loadCircleImageURL
 
@@ -30,6 +31,12 @@ class RepoListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     fun updateRepoList(repoList: MutableList<Repo>) {
         this.repoList = repoList
         notifyDataSetChanged()
+    }
+
+    fun addRepoList(repoList: MutableList<Repo>) {
+        val startPos = this.repoList.size
+        this.repoList.addAll(repoList)
+        notifyItemRangeInserted(startPos, repoList.size)
     }
 
     class RepoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
