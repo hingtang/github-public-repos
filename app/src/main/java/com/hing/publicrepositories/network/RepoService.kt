@@ -1,6 +1,6 @@
 package com.hing.publicrepositories.network
 
-import com.hing.publicrepositories.data.Repo
+import com.hing.publicrepositories.entities.Repo
 import io.reactivex.Single
 import retrofit2.http.GET
 
