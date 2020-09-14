@@ -1,15 +1,15 @@
 package com.hing.publicrepositories.entities
 
-import com.google.gson.annotations.SerializedName
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 /**
  * Created by Hung Luong on 8/26/2020.
  */
+@Entity
 data class User(
-    @SerializedName("id")
-    val userId: Long,
-    @SerializedName("login")
-    val loginName: String,
-    @SerializedName("avatar_url")
-    val avatarUrl: String
+    @PrimaryKey val userId: Long,
+    @ColumnInfo(name = "login") val loginName: String,
+    @ColumnInfo(name = "avatar_url") val avatarUrl: String
 )

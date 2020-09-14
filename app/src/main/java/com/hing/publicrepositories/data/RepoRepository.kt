@@ -1,5 +1,6 @@
 package com.hing.publicrepositories.data
 
+import com.hing.publicrepositories.data.remote.RepoRemoteDataSource
 import com.hing.publicrepositories.entities.Repo
 import io.reactivex.Single
 import javax.inject.Inject

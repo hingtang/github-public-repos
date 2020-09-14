@@ -29,6 +29,7 @@ class RepoListViewModel @Inject constructor(
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
                 repoList.value = it
+
             }, {
 
             })
